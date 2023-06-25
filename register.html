@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    body {
+        background-color: #252525;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid #01ccff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 40px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoimg {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs input {
+        border: none;
+        border-radius: 7px;
+        padding: 14px;
+        font-size: large;
+        margin: 10px;
+    }
+
+    ::placeholder {
+        color: #01ccff;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    p {
+        color: whitesmoke;
+        margin: 15px 14px;
+    }
+
+    #link {
+        text-decoration: none;
+        color: #01ccff;
+    }
+
+    #link:hover {
+        color: aqua;
+    }
+
+    button {
+        background-color: #01ccff;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 120px;
+        border-radius: 10px;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="logoimg">
+            <img src="/AirCore-master/imgs/logo.png" alt=""><br>
+        </div>
+    
+
+        <form id="login_form">
+            <div class="inputs">
+                <div>
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="User Name">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address" id="user_email" required>
+                </div>
+
+                <input type="text" placeholder="Password" id="user_password" required>
+                <button for="details" type="submit">Register</button>
+            </div>
+        </form>
+
+        <p>Already a User ? <a id="link" href="login.html"> Login  </a></p>
+    </div>
+    <script src="./register.js" type="module"></script>
+</body>
+
+</html>

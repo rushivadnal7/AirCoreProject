@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirCore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="raj.css">
+    <script src="./auth.js" type="module"></script>
+    <script src="./raj.js" type="module"></script>
+    <script src="./footer.js" type="module"></script>
+</head>
+
+<!-- <script>
+    function checkbox1() {
+        document.getElementById("twoway").checked = false;
+
+    }
+    function checkbox2() {
+        document.getElementById("oneway").checked = false;
+        document.getElementsByClassName('.line2').innerHTML += ` <input type="text" placeholder="Return" onfocus="(this.type='date')" onblur="(this.type='text')"
+                            id="return" required>`;
+
+    }
+</script> -->
+
+<body>
+    <!--  HEADER  STARTS  -->
+    <header class="text-white body-font">
+        <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img id="logo" src="/AirCore-master/imgs/logo.png" alt="">
+            </a>
+            <nav class="links md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" id="link1" class="mr-5">Home</a>
+                <a href="aboutus.html" id="link2" class="mr-5" id="">About Us</a>
+                <a href="contactus.html" id="link3" class="mr-5">Contact US</a>
+                <!-- <a href="offer.html" id="link4" class="mr-5">Offers</a> -->
+                <a href="tickets.html" id="link4" class="mr-5">Tickets</a>
+            </nav>
+            
+                <button class="loginbtn inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><span
+                        id="log_status">Login</span>
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+        </div>
+    </header>
+    <!--HEADER ENDS  -->
+
+
+    <!--SLIDESHOW STARTS  -->
+    <!-- Define the slideshow container -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+
+            <!-- Define each of the slides
+                and write the content -->
+
+            <div class="slide">
+                <img src="/AirCore-master/imgs/slideshowimg1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/AirCore-master/imgs/slideshowimg2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/AirCore-master/imgs/slideshowimg3.jpg" alt="">
+            </div>
+            <!-- <div class="slide">
+                <img src="/imgs/ronaldo1.jpeg" alt="">
+            </div> -->
+        </div>
+    </div>
+    <!-- SLIDESHOW ENDS -->
+    <div class="containerbox">
+        <form id="flight_form">
+            <div class="line0">
+                <div class="h1">
+                    <!-- <p> Search Flights </p> -->
+                    <select id="search_flights">
+                        <option value="air india">Air India</option>
+                        <option value="indigo">Indigo</option>
+                        <option value="spice jet">Spice Jet</option>
+                    </select>
+                    <select id="flight_type">
+                        <option value="International">International</option>
+                        <option value="Domestic">Domestic</option>
+                    </select>
+                </div>
+                <!-- <input type="checkbox" name="way" id="oneway" value="one way">
+                <label for="">One Way</label> -->
+
+                <!-- <input type="checkbox" name="way" id="twoway" value="two way" checked>
+                <label for="">Two Way</label> -->
+                <br>
+            </div>
+
+            <div class="line1">
+                <!-- <input type="text" placeholder="from" name="" id="form" class="input_from" required> -->
+                <select name="from" class="input_from" id="form" autofocus required>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="England">England</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UAE">UAE</option>
+                </select>
+                <img id="formimg" src="/AirCore-master/imgs/exchangeicon.png" alt="">
+                <!-- <input type="text" placeholder="To" name="" id="to" class="input_to" required> -->
+                <select name="To" class="input_to" id="form" required>
+                    <!-- <option value="India">India</option> -->
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="England">England</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UAE">UAE</option>
+                </select>
+            </div>
+
+            <div class="line2">
+                <input type="text" placeholder="Departing" onfocus="(this.type='date')" onblur="(this.type='text')"
+                    id="depart" required>
+
+                <!-- <input type="text" placeholder="Return" onfocus="(this.type='date')" onblur="(this.type='text')"
+                    id="return" required> -->
+
+                <label for="noOfAdult">Adult :</label>
+                <select name="noOfAdult" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+                <label for="noOfChild">Children :</label>
+                <select name="noOfChild" id="childs">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+
+            </div>
+
+            <div class="line3 justify-around" >
+                <div class="eco">
+                    <label for="classSelector">Class :</label>
+                    <select name="classSelector" id="seatclass">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first class">First Class</option>
+                    </select>
+                </div>
+                <span class="price">Price : ₹7000</span>
+            </div>
+
+
+            <button id="btn" class="form_btn">submit</button>
+        </form>
+    </div>
+
+    <marquee behavior="" direction="">!! Latest news Regarding Flights !!</marquee>
+
+    <div class="boxes">
+        <a href="contactus.html">
+
+            <div class="box1">
+                <!-- <img src="/imgs/box1.jpeg" alt=""> -->
+                <div class="txt" id="txt1">
+                    <h1>Customer Support</h1>
+                    <p>Click here for us to help quickly and easily with your queries.</p>
+                </div>
+
+            </div>
+        </a>
+        <a href="reasonstofly.html">
+
+            <div class="box2">
+                <!-- <img src="/imgs/box2.jpeg" alt=""> -->
+                <div class="txt" id="txt2">
+                    <h1>More Reasons To Fly With AirCore</h1>
+                    <p>FR Points &amp; associated benefits extended till 31st March 2023. </p>
+                </div>
+            </div>
+        </a>
+
+        <a href="dreamliner.html">
+
+            <div class="box3">
+                <!-- <img src="/imgs/box3.jpeg" alt=""> -->
+                <div class="txt" id="txt3">
+                    <h1>Experiance Dreamliner</h1>
+                    <p>State-of-the-art-flying with more entertainment and comfort</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <h1 id="txtpostboxes">Plan your trip and travel with confidence</h1>
+    <div class="precaus">
+
+        <div class="prebox1">
+            <a href="covidupdate.html">
+                <p>Learn More</p>
+            </a>
+        </div>
+        <div class="prebox2">
+            <a href="travelreq.html">
+                <p>Learn More</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER STARTS -->
+    <footer class="text-gray-500 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-600 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-500 hover:text-blue-600 cursor-pointer">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-500 hover:text-blue-600 cursor-pointer">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-500 hover:text-blue-600 cursor-pointer">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-500 hover:text-blue-600 cursor-pointer">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-200">
+            <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+                <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+                    <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                        <label for="footer-field" class="leading-7 text-sm ">FeedBack</label>
+                        <input type="text" id="footer-field" name="footer-field"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Send</button>
+                    <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Bitters chicharrones
+                        fanny pack
+                        <br class="lg:block hidden">waistcoat green juice
+                    </p>
+                </div>
+                <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="bg-blue-300">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-700 text-sm text-center sm:text-left">© 2023 AirCore —
+                    <a href="https://twitter.com/knyttneve" class="text-gray-700 ml-1" target="_blank"
+                        rel="noopener noreferrer">@Twitter Handle</a>
+                </p>
+                <!-- <span
+                        class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel
+                        pin tousled raclette tacos irony</span> -->
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+
+
+</html>

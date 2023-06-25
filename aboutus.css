@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Graduate&family=Libre+Barcode+39&family=Libre+Baskerville:wght@700&family=Roboto+Condensed:wght@300&family=Rozha+One&family=Satisfy&family=Six+Caps&family=Suranna&family=Teko:wght@300;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+margin-bottom: 40px;
+}
+ /* HEADER STARTS */
+ .nav{
+    box-shadow:1px 1.5px  #A9A9A9;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+}
+
+#link1,
+#link2,
+#link3,
+#link4 {
+    margin: 30px;
+    color: gray;
+}
+
+
+#link4:hover,
+#link3:hover,
+#link2:hover,
+#link1:hover {
+    font-size: 17px;
+    border-radius: 6px;
+    border-bottom: 1.5px solid #01ccff;
+    color: #01ccff;
+}
+
+/* HEADER ENDS */
+.img{
+    /* width: 100%; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img p{
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Rozha One', serif;
+}
+#icon{
+    height: 90px;
+}

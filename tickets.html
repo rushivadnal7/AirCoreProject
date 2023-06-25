@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All of your tickets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./footer.js" type="module"></script>
+
+</head>
+<style>
+    #logo {
+ 	height: 100px;
+ 	width: 100px;
+ }
+ #link1 , #link2, #link3 ,#link4{
+    margin: 30px;
+}
+ #link5 {
+ 	color: #01ccff;
+ 	border-radius: 7px;
+ 	border-bottom: 1.5px solid #01ccff;
+ 	color: #01ccff;
+ }
+
+#link1,
+ #link2,
+ #link3,
+ #link4 {
+ 	color: gray;
+ }
+
+ #link4:hover,
+ #link3:hover,
+ #link2:hover, 
+ #link1:hover{
+ 	color: #01ccff;
+	 font-size: 17px;
+	 border-radius: 6px;
+	 /* padding: 2px 5px; */
+	 border-bottom: 1.5px solid #01ccff;
+	 color: #01ccff;
+ }
+    .all{
+        /* height: ; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ticket{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.07fr;
+        width: 700px;
+        margin-bottom: 1rem;
+        height: 300px;
+        border: 2px solid #01ccff;
+        border-radius: 7px;
+    }
+    .heading{
+        text-align: center;
+        margin: 5px;
+        padding: 7px;
+        font-size: larger;
+        margin: 0px;
+        background-color: #01ccff;
+    }
+    .journey{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    .journey label{
+        padding: 10px 40px;
+        font-size: larger;
+    }
+
+    #formimg {
+        width: 40px;
+        height: 40px;
+    }
+    .info1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .info2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    #lab1 , #lab2 , #lab3{
+        margin: 15px 19px;
+    }
+    footer{
+        background-color: #01ccff;
+    }
+ 
+</style>
+
+<body>
+    <!--  HEADER  STARTS  -->
+    <header class="nav text-white body-font">
+        <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img id="logo" src="/AirCore-master/imgs/logo.png" alt="">
+            </a>
+            <nav class="links md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" id="link1" class="mr-5">Home</a>
+                <a href="aboutus.html" id="link2" class="mr-5" id="">About Us</a>
+                <a href="contactus.html" id="link3" class="mr-5">Contact US</a>
+                <!-- <a href="offer.html" id="link4" class="mr-5">Offers</a> -->
+                <a href="tickets.html" id="link5" class="mr-5">Tickets</a>
+            </nav>
+        </div>
+    </header>
+    <!--HEADER ENDS  -->
+
+    <div class="all">
+        <div class="ticket">
+            <div class="heading">
+                Airline Company</div>
+            <div class="journey">
+                <label for="">mumbai</label>
+                <img id="formimg" src="/AirCore-master/imgs/exchangeicon.png" alt="">
+                <label for="">delhi</label>
+            </div>
+            <div class="info1">   
+                <label id="lab2">adults : 1</label>
+                <label id="lab3">infant : 1</label>
+            </div>
+            <div class="info2">
+                <label id="lab1">date : 18/02/2021 </label>
+                <label id="lab1">Two ways</label>
+                <label id="lab1">class : economy</label>
+            </div>
+            <footer></footer>
+        </div>
+    </div>
+
+    <script src="./tickets.js" type="module"></script>
+</body>
+
+</html>

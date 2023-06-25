@@ -1,0 +1,466 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Graduate&family=Kanit:ital,wght@0,700;1,600;1,700&family=Libre+Barcode+39&family=Libre+Baskerville:wght@700&family=Roboto+Condensed:wght@300&family=Rozha+One&family=Satisfy&family=Six+Caps&family=Suranna&family=Teko:wght@300&display=swap');
+
+ /* 
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Graduate', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Libre Barcode 39', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rozha One', serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Suranna', serif;
+font-family: 'Teko', sans-serif;
+*/
+ body {
+ 	font-family: Helvetica, sans-serif;
+ 	padding: 0px;
+ 	text-align: center;
+ 	font-size: 50;
+ 	/* background-color: #252525; */
+ }
+
+ #logo {
+ 	height: 100px;
+ 	width: 100px;
+ }
+
+ #link1,
+ #link2,
+ #link3,
+ #link4 {
+ 	margin: 30px;
+ }
+
+ #link1 {
+ 	color: #01ccff;
+ 	border-radius: 7px;
+ 	border-bottom: 1.5px solid #01ccff;
+ 	color: #01ccff;
+ }
+
+ #link2,
+ #link3,
+ #link4 {
+ 	color: gray;
+ }
+
+ #link4:hover,
+ #link3:hover,
+ #link2:hover {
+ 	color: #01ccff;
+ 	font-size: 17px;
+ 	border-radius: 6px;
+ 	/* padding: 2px 5px; */
+ 	border-bottom: 1.5px solid #01ccff;
+ 	color: #01ccff;
+ }
+
+ .loginbtn{
+ 	margin-right: 10px;
+ 	background-color: #01ccff;
+ 	color: whitesmoke;
+ }
+
+
+ /* Styling the area of the slides */
+ #slideshow {
+ 	overflow: hidden;
+ 	height: 410px;
+ 	width: 728px;
+ 	margin: 0 auto;
+ }
+
+ /* Style each of the sides
+with a fixed width and height */
+ .slide {
+ 	float: left;
+ 	height: 510px;
+ 	width: 728px;
+ }
+
+ .slide img {
+ 	width: 100%;
+ }
+
+ /* Add animation to the slides */
+ .slide-wrapper {
+
+ 	/* Calculate the total width on the
+	basis of number of slides */
+ 	width: calc(728px * 4);
+
+ 	/* Specify the animation with the
+	duration and speed */
+ 	animation: slide 10s ease infinite;
+ }
+
+ /* Set the background color
+of each of the slides */
+ .slide:nth-child(1) {
+ 	background: green;
+ }
+
+ .slide:nth-child(2) {
+ 	background: pink;
+ }
+
+ .slide:nth-child(3) {
+ 	background: red;
+ }
+
+ /* 
+.slide:nth-child(4) {
+	background: yellow;
+} */
+
+ /* Define the animation
+for the slideshow */
+ @keyframes slide {
+
+ 	/* Calculate the margin-left for
+	each of the slides */
+ 	20% {
+ 		margin-left: 0px;
+ 	}
+
+ 	40% {
+ 		margin-left: calc(-728px * 1);
+ 	}
+
+ 	60% {
+ 		margin-left: calc(-728px * 2);
+ 	}
+
+ 	/* 80% {
+		margin-left: calc(-728px * 3);
+	} */
+ }
+
+ .containerbox {
+ 	/* display: flex; */
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 2px solid white;
+ 	border-radius: 15px;
+ 	background-color: transparent;
+ 	width: 70%;
+ 	border: 2px solid #01ccff;
+ 	padding: 10px;
+
+ }
+
+ .line0 {
+ 	margin-bottom: 20px;
+ }
+
+ .line0 label {
+ 	color: #01ccff;
+ }
+
+ .h1 {
+ 	margin: 0px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding: 0px;
+ }
+
+ /*  .h1 p {
+ 	padding: 7px;
+ 	color: #01ccff;
+ 	width: fit-content;
+ 	background-color: transparent;
+ 	border: 1.5px solid #01ccff;
+ 	border-radius: 10px;
+} */
+
+ #search_flights {
+ 	background-color: transparent;
+ 	padding: .5rem 1rem;
+ 	color: #01ccff;
+ 	border: 1.5px solid #01ccff;
+ 	border-radius: 10px;
+ 	margin: 0px 10px;
+ }
+
+ #flight_type {
+ 	margin: 0px 10px;
+ 	background-color: transparent;
+ 	padding: .5rem 1rem;
+ 	color: #01ccff;
+ 	border: 1.5px solid #01ccff;
+ 	border-radius: 10px;
+ }
+
+ .line0 label {
+ 	padding: 9px;
+
+ }
+
+ #form {
+ 	padding: 10px;
+ }
+
+ #to {
+ 	padding: 10px;
+ }
+
+ #formimg {
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+ .line1 {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	margin-bottom: 20px;
+ 	font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ #form,
+ #to {
+ 	/* margin: 17px 10px; */
+ 	width: 45%;
+ 	/* border: 2px solid white; */
+ 	border-radius: 10px;
+ }
+
+ #formimg {
+ 	display: inline;
+ }
+
+ .line2 {
+ 	display: flex;
+ 	justify-content: space-evenly;
+ 	color: #01ccff;
+ 	align-items: center;
+ 	margin-bottom: 20px;
+ }
+
+ #depart {
+ 	border-radius: 7px;
+ 	padding: 7px;
+ 	text-align: center;
+ 	width: 250px;
+ }
+
+ #return {
+ 	border-radius: 7px;
+ 	padding: 7px;
+ 	text-align: center;
+ 	width: 250px;
+ }
+
+ .line2 input {
+ 	font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ .line2 label {
+ 	font-family: 'Libre Baskerville', serif;
+ 	/* font-family: 'Graduate', cursive; */
+
+ }
+
+ .line3 {
+ 	display: flex;
+ 	color: #01ccff;
+ 	align-items: center;
+ 	margin-bottom: 20px;
+ }
+
+ .eco , .price{
+ 	margin: 15px 0px;
+ 	font-family: 'Libre Baskerville', serif;
+ }
+
+ #btn {
+ 	background-color: #01ccff;
+ 	padding: 7px 17px;
+ 	font-size: larger;
+ 	border-radius: 30px;
+ 	font-weight: 500;
+ 	font-family: 'Kanit', sans-serif;
+ }
+
+ marquee {
+ 	background-color: antiquewhite;
+ 	font-family: 'Roboto Condensed', sans-serif;
+ 	margin: 70px 2px;
+ 	font-weight: 600;
+ 	color: #01ccff;
+ 	background-color: transparent;
+ 	padding: 5px;
+ 	font-size: 35px;
+
+ }
+
+ .boxes {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .box1,
+ .box2,
+ .box3 {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: end;
+ 	border-radius: 12px;
+ 	width: 350px;
+ 	height: 500px;
+ 	margin: 15px;
+ 	cursor: pointer;
+ }
+
+ .box1 p,
+ .box2 p,
+ .box3 p {
+ 	margin: 4px;
+ 	font-size: large;
+ 	color: #505050;
+ }
+
+
+ .box1 {
+ 	background-image: url(imgs/box3.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 120%;
+ }
+
+ .box2 {
+ 	background-image: url(imgs/box1.jpeg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 10%;
+ }
+
+ .box3 {
+ 	background-image: url(imgs/box2.png);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 10%;
+ }
+
+ /* .txt {
+}  */
+ .txt h1,
+ .box1 p,
+ .box2 p,
+ .box3 p {
+ 	visibility: hidden;
+ }
+
+ .box1:hover p {
+ 	visibility: visible;
+ }
+
+ .box1:hover .txt {
+ 	width: 100%;
+ 	height: 40%;
+ 	background-color: #ffffffcc;
+ 	border-radius: 12px;
+ }
+
+ .box1:hover .txt h1 {
+ 	font-weight: bold;
+ 	/* font-style: italic; */
+ 	visibility: visible;
+ 	font-size: 35px;
+ 	color: #404040;
+ }
+
+ .box2:hover p {
+ 	visibility: visible;
+ }
+
+ .box2:hover .txt {
+ 	width: 100%;
+ 	height: 40%;
+ 	background-color: #ffffffcc;
+ 	border-radius: 12px;
+ }
+
+ .box2:hover .txt h1 {
+ 	font-weight: bold;
+ 	/* font-style: italic; */
+ 	visibility: visible;
+ 	font-size: 35px;
+ 	color: #404040;
+ }
+
+ .box3:hover p {
+ 	visibility: visible;
+ }
+
+ .box3:hover .txt {
+ 	width: 100%;
+ 	height: 40%;
+ 	background-color: #ffffffcc;
+ 	border-radius: 12px;
+ }
+
+ .box3:hover .txt h1 {
+ 	font-weight: bold;
+ 	/* font-style: italic; */
+ 	visibility: visible;
+ 	font-size: 35px;
+ 	color: #404040;
+ }
+
+ #txtpostboxes {
+ 	margin: 100px 0px 40px 0px;
+ 	font-size: xx-large;
+ 	font-weight: 600;
+ 	background-color: #01ccff;
+ 	color: white;
+ 	padding: 2px 0px;
+ }
+
+ .precaus {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+
+ }
+
+ .prebox1,
+ .prebox2 {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: end;
+ 	border-radius: 17px;
+ 	width: 550px;
+ 	height: 350px;
+ 	margin: 15px;
+ }
+
+ .prebox1 {
+ 	background-image: url(imgs/covidimg.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 10%;
+ }
+
+ .prebox2 {
+ 	background-image: url(imgs/passportimg.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: 100%;
+ }
+
+ .prebox1 p,
+ .prebox2 p {
+ 	font-size: large;
+ 	width: fit-content;
+ 	padding: 2px 10px;
+ 	background-color: whitesmoke;
+ 	color: #ed1c24;
+ 	margin-bottom: 5px;
+ 	border-radius: 20px;
+ 	border: 1.5px solid #ed1c24;
+ }

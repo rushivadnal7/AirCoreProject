@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        background-color: #252525;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid #01ccff;
+        padding: 10px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoimg {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .inputs {
+        font-size: large;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    p {
+        color: whitesmoke;
+        margin: 15px 14px;
+    }
+
+    #link {
+        text-decoration: none;
+        color: #01ccff;
+    }
+
+    #link:hover {
+        color: aqua;
+    }
+
+    button {
+        background-color: #01ccff;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 120px;
+        border-radius: 10px;
+        border: none;
+    }
+</style>
+
+<body>
+    <form id="login_form">
+        <div class="container">
+            <div class="logoimg">
+                <img src="/AirCore-master/imgs/logo.png" alt=""><br>
+            </div>
+            <input name="details" class="inputs" type="email" placeholder="Enter your mail" id="login_email" required>
+            <br>
+            <input name="details" class="inputs" type="text" placeholder="Password" id="login_password" required>
+            <br>
+            <button for="details" type="submit">Login</button>
+
+            <p>not a user ? <a id="link" href="register.html"> Register now </a></p>
+        </div>
+    </form>
+    <script src="./login.js" type="module"></script>
+</body>
+
+</html>
